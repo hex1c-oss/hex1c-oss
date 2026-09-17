@@ -1,0 +1,73 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Илья Аношин — 1С-разработчик</title>
+  <desc id="desc">Тёмный технологичный баннер с терминалом и акцентами в цветах 1С</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="70" y1="20" x2="1120" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="0.52" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#050914"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="230" y1="80" x2="885" y2="245" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC928"/>
+      <stop offset="0.5" stop-color="#FF8A00"/>
+      <stop offset="1" stop-color="#58D7FF"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1060 30) rotate(128) scale(390 360)">
+      <stop stop-color="#17B8FF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#17B8FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#93C5FD" stroke-opacity="0.055"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.48"/>
+    </filter>
+    <clipPath id="clip"><rect width="1200" height="360" rx="28"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <rect width="1200" height="360" fill="url(#orb)"/>
+    <rect width="1200" height="360" fill="url(#grid)"/>
+
+    <circle cx="1085" cy="63" r="170" stroke="#38BDF8" stroke-opacity="0.12" stroke-width="2"/>
+    <circle cx="1085" cy="63" r="121" stroke="#FFC928" stroke-opacity="0.13"/>
+    <path d="M896 323C983 240 1046 310 1210 179" stroke="url(#accent)" stroke-opacity="0.22" stroke-width="2"/>
+
+    <g transform="translate(76 58)">
+      <rect x="0" y="0" width="92" height="92" rx="24" fill="#FFC928" fill-opacity="0.10" stroke="#FFC928" stroke-opacity="0.34"/>
+      <path d="M28 47L41 34M28 47L41 60M65 34L52 60" stroke="#FFC928" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    </g>
+
+    <text x="194" y="99" fill="#8FA2BC" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="650" letter-spacing="4">1C • AUTOMATION • INTEGRATIONS</text>
+    <text x="194" y="157" fill="url(#accent)" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="1">ИЛЬЯ АНОШИН</text>
+    <text x="194" y="203" fill="#E5EEF9" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="500">1С-разработчик, который автоматизирует рутину</text>
+
+    <g transform="translate(194 238)" filter="url(#shadow)">
+      <rect width="688" height="70" rx="15" fill="#090F1B" stroke="#233147"/>
+      <circle cx="25" cy="20" r="5" fill="#FF5F57"/>
+      <circle cx="43" cy="20" r="5" fill="#FFBD2E"/>
+      <circle cx="61" cy="20" r="5" fill="#28C840"/>
+      <text x="24" y="51" fill="#58D7FF" font-family="Consolas, Menlo, monospace" font-size="17">$</text>
+      <text x="47" y="51" fill="#D8E4F2" font-family="Consolas, Menlo, monospace" font-size="17">build business_process --clean --reliable</text>
+      <rect x="562" y="36" width="10" height="20" rx="2" fill="#FFC928">
+        <animate attributeName="opacity" values="1;0.18;1" dur="1.15s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g transform="translate(944 106)">
+      <rect width="183" height="158" rx="24" fill="#0B1422" fill-opacity="0.78" stroke="#24354A"/>
+      <text x="25" y="42" fill="#6D829F" font-family="Consolas, Menlo, monospace" font-size="14">CURRENT FOCUS</text>
+      <text x="25" y="77" fill="#FFC928" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">1С:Предприятие</text>
+      <text x="25" y="105" fill="#58D7FF" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">AI-инструменты</text>
+      <text x="25" y="133" fill="#C9D5E5" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">REST / Git</text>
+    </g>
+
+    <rect x="0" y="356" width="1200" height="4" fill="url(#accent)"/>
+  </g>
+</svg>
